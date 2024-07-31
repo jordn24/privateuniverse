@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Providers } from './providers'
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from "@/app/providers";
+import NavBar from "@/components/NavBar";
+import { Container } from "@chakra-ui/react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +16,12 @@ export default function RootLayout({
   return (
       <html lang='en'>
         <body>
-          <Providers>{children}</Providers>
+            <Providers>
+              <Container>
+                <NavBar />
+                {children}
+              </Container>
+            </Providers>
         </body>
       </html>
   );
