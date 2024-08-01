@@ -4,7 +4,7 @@ import { Card, CardBody, CardHeader, Heading, Stack, Text, StackDivider } from "
 export async function Data() {
 
     return (
-        <Card variant='outline' marginTop={10}>
+        <Card size={'lg'} marginTop={10}>
         <CardHeader>
           <Heading size='md'>https://github.com/wh-iterabb-it/meowfacts</Heading>
         </CardHeader>

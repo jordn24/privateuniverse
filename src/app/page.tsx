@@ -105,7 +105,7 @@ const Home = () => {
           </ModalContent>
         </Modal>
       ) : (
-        <Card variant='outline' marginTop={10}>
+        <Card size={'lg'} marginTop={10}>
           <CardHeader>
             <Heading size='md'>Profile:</Heading>
           </CardHeader>

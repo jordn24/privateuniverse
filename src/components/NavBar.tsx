@@ -7,7 +7,7 @@ import { signOut } from 'next-auth/react'; // useSession hook
 const NavBar = () => {
 
     return (
-        <Box display='flex' justifyContent='center' alignItems='center'>
+        <Box display='flex' justifyContent='center' alignItems='center' >
             <Breadcrumb separator='-' marginTop={10}>
                 <BreadcrumbItem>
                     <BreadcrumbLink onClick={() => signOut()}>Sign Out</BreadcrumbLink>

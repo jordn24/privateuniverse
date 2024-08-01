@@ -44,6 +44,9 @@ export const authOptions: NextAuthOptions = {
       }
     })
   ],
+  theme: {
+    colorScheme: "light", // "auto" | "dark" | "light",
+  }
 }
 
 const handler = NextAuth(authOptions)
