@@ -1,7 +1,7 @@
 import FetchData from "@/components/FetchData";
 import { Card, CardBody, CardHeader, Heading, Stack, Text, StackDivider } from "@chakra-ui/react";
 
-export async function Data() {
+async function Data() {
 
     return (
         <Card size={'lg'} marginTop={10}>
